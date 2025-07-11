@@ -40,3 +40,5 @@ npm run dev
 1. Create React+Vite app
 2. Install Tailwind Css via npm
 
+# Features
+- login/sign-up Form
