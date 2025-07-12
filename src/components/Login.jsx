@@ -1,5 +1,11 @@
+import { useState } from "react"
 import Header from "./header"
 const Login = () => {
+  const [isSignInForm , setIsSignInForm] = useState (true);
+
+    const toggleSignInForm = () =>{
+        setIsSignInForm(!isSignInForm);
+    }
   return (
 
     <div>
@@ -10,21 +16,41 @@ const Login = () => {
       </div>
       <form className="absolute w-3/12 p-12 bg-black/75 text-white my-36 mx-auto right-0 left-0 rounded-md shadow-lg">
 
-        <h1 className="font-bold text-3xl pb-5">Sign In</h1>
+        <h1 className="font-bold text-3xl pb-5">
+          {isSignInForm ? "Sign In" : "Sign Up"}
+        </h1>
+
+        {!isSignInForm && (<input
+          type="text"
+          placeholder="Full Name"
+          className="w-full p-3 my-2 bg-gray-700 rounded-md"/>)}
 
         <input
           type="text"
           placeholder="Email Address"
           className="w-full p-3 my-2 bg-gray-700 rounded-md"/>
+
+          
         <input
           type="password"
           placeholder="Password"
           className="w-full p-3 my-2 bg-gray-700 rounded-md"/>
+
+
         <button
           type="submit"
-          className="w-full p-3 mt-4 bg-red-700 hover:bg-red-800 text-white font-semibold rounded-md">
-          Sign In
+          className="w-full p-3 mt-4 bg-red-700 hover:bg-red-800 text-white font-semibold rounded-md">         
+          {isSignInForm ? "Sign In" : "Sign Up"}
         </button>
+
+        <p className="text-sm text-gray-300 mt-4">
+          {isSignInForm ? "New to Netflix? " : "Already a user? "}
+            <span onClick={toggleSignInForm} className="text-white underline hover:text-red-500 cursor-pointer">
+              {isSignInForm ? "Sign up here" : "Sign in now"}
+            </span>
+        </p>
+
+
       </form>
     </div>
   )

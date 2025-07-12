@@ -42,3 +42,4 @@ npm run dev
 
 # Features
 - login/sign-up Form
+- Validate SignIn/SignUp 
