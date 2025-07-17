@@ -1,5 +1,5 @@
 import {createBrowserRouter} from "react-router-dom"
-import Login from './login'
+import Login from "./Login"
 import Browse from './browse'
 import { RouterProvider } from "react-router-dom"
 
