@@ -20,7 +20,7 @@ const Login = () => {
 
   if(!isSignInForm){
     createUserWithEmailAndPassword(auth, email.current.value , password.current.value)
-  .then((userCredential) => {
+    .then((userCredential) => {
 
     
     // Signed up 
