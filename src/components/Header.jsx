@@ -6,7 +6,7 @@ import { addUser, removeUser } from "../assets/userSlice";
 import { useEffect } from "react";
 import { LOGO } from "../assets/constants";
 
-const header = () => {
+const Header = () => {
 const dispatch = useDispatch();
 const navigate = useNavigate();
 const user = useSelector(store => store.user);
@@ -53,4 +53,4 @@ const handleSignOut = () =>{
   )
 }
 
-export default header
+export default Header
