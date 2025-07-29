@@ -7,6 +7,9 @@ const appStore = configureStore(
         reducer : {
             user : userReducer,
             movies : moviesReducer,
-        }
+        },
+        devTools: true, // ✅ explicitly enable Redux DevTools
+
     });
-export default appStore;
+
+export default appStore; 

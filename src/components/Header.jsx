@@ -1,4 +1,4 @@
-import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
+import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from "../assets/fireBase"
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
@@ -18,7 +18,6 @@ const handleSignOut = () =>{
 }
 
   useEffect (() => {
-      const auth = getAuth();
       onAuthStateChanged(auth, (user) => {
        if (user) {
         const {uid ,email ,displayName ,photoURL } = user;

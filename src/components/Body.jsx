@@ -1,6 +1,6 @@
 import {createBrowserRouter} from "react-router-dom"
 import Login from "./Login"
-import Browse from './browse'
+import Browse from './Browse'
 import { RouterProvider } from "react-router-dom"
 import { useDispatch } from "react-redux"
 

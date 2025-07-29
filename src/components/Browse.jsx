@@ -19,10 +19,6 @@ const Browse = () => {
         {/* -- Secondary Container -- */}
           {/* -- Movies_List * n -- */}
             {/* -- Cards * n -- */}
-        
-        
-        
-
 
     </div>
   )
