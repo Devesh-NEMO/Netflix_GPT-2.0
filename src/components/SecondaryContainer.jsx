@@ -1,7 +1,10 @@
+import MovieList from "./MovieList"
 
 const SecondaryContainer = () => {
   return (
-    <div>SecondaryContainer</div>
+    <div>
+      <MovieList />
+    </div>
   )
 }
 
