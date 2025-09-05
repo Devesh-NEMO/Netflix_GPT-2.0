@@ -1,8 +1,16 @@
-import React from 'react'
+import MovieCard from "./MovieCard";
 
-const MovieList = () => {
+const MovieList = ({title , movies}) => {
+  console.log(movies);
   return (
-    <div>MovieList</div>
+    <div>
+      <div>
+        <h1>{title}</h1>
+        <div>
+          <MovieCard />
+        </div>
+      </div>
+    </div>
   )
 }
 
